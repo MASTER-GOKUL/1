@@ -14,7 +14,7 @@ h1{ font-size: +50;
                 border-radius: 2.5rem;
             }
 .bg1{
-  		background: -webkit-linear-gradient(left,#FFFFFF,#cfecec,	#FFFFFF);
+  		background: -webkit-linear-gradient(left,	#FFFFFF,#cfecec,#FFFFFF);
 }
 .btnSubmit
             {
@@ -53,6 +53,8 @@ h1{ font-size: +50;
 <div id="demo">
 <p class="f1">GUYS READ <br> COME ON SELECT</P>
 </div>
+<div id="demo1">
+</div>
 <input type="submit" onclick="my()" class="btnSubmit btn-block" />
 </center>
 </div>
@@ -63,19 +65,23 @@ var f=0;
 while(f==0){
 var retvalue = Math.floor((Math.random() * 3) + 1);
 var repImage;
+var text;
 if (retvalue == 1){  d[0]+=1; f=1;}
 if (retvalue == 2){  d[1]+=1; f=2;}
 if (retvalue == 3){  d[2]+=1; f=3;}
 if (retvalue == 4){  d[3]+=1; f=4;}
 if (retvalue == 5){  d[4]+=1; f=5;}
  if(f==1 && d[0]<2){              
-  repImage = "<img  class='img2' src='1.png'width=200 height=200>";demo.innerHTML = repImage;}
+  repImage = "<img  class='img2' src='1.png'width=300 height=300>";demo.innerHTML = repImage;
+   text="<h2><center>1<br>GIRL IN THE CITY</center></h2>";demo1.innerHTML = text;}
 else if(f==1 && d[0]>=2){f=0;continue;}
  if(f==2 && d[1]<2){
-  repImage = "<img  class='img2' src='2.png'width=200 height=200>";demo.innerHTML = repImage;}
+  repImage = "<img  class='img2' src='2.png'width=300 height=300>";demo.innerHTML = repImage;
+	 text="<h2><center>2<br>ELITE</center></h2>";demo1.innerHTML = text;}
 else if(f==2 && d[1]>=2){f=0;continue;}
  if(f==3 && d[2]<2){
-  repImage = "<img  class='img2' src='3.png'width=200 height=200>";demo.innerHTML = repImage;}
+  repImage = "<img  class='img2' src='3.png'width=300 height=300>";demo.innerHTML = repImage;
+	 text="<h2><center>3<br>STRANGER THINGS</center></h2>";demo1.innerHTML = text;}
 else if(f==3 && d[2]>=2){f=0;continue;}
 
 }
